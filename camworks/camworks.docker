@@ -1,0 +1,61 @@
+FROM monroe/base:web
+
+MAINTAINER gareth.tyson@qmul.ac.uk
+
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+RUN python get-pip.py
+RUN pip install mobile-codes
+
+ENV APT_OPTS -y --allow-downgrades --allow-remove-essential --allow-change-held-packages --no-install-recommends --no-install-suggests --allow-unauthenticated
+
+RUN export DEBIAN_FRONTEND=noninteractive \
+	&& apt-get update \
+	&& apt-get ${APT_OPTS} install \
+	python-subprocess32 \
+	# Fix missing packages
+    && apt-get update ${APT_OPTS} --fix-missing \
+    # Cleanup
+    && apt-get clean ${APT_OPTS} \
+    && apt-get autoremove ${APT_OPTS} \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc /usr/share/man /usr/share/locale /var/cache/debconf/*-old
+
+COPY files/* /opt/monroe/
+
+ENTRYPOINT ["dumb-init", "--", "/usr/bin/python", "/opt/monroe/run.sh"]
+ENTRYPOINT ["dumb-init", "--"]
+
+RUN export DEBIAN_FRONTEND=noninteractive \
+    && apt-get update \
+    && apt-get install ${APT_OPTS} \
+    dbus-x11 \
+    # Fix missing packages
+    && apt-get update ${APT_OPTS} --fix-missing \
+    # Cleanup
+    && apt-get clean ${APT_OPTS} \
+    && apt-get autoremove ${APT_OPTS} \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc /usr/share/man /usr/share/locale /var/cache/debconf/*-old firefox.tbz2 firefox-${FIREFOX_VERSION}.tar.bz2  geckodriver.tgz dumb-init.deb chromedriver.zip
+
+WORKDIR /opt/monroe/
+RUN npm install make -g
+RUN npm install --production
+
+COPY files/experiment.py /opt/monroe/
+#COPY files/config /opt/monroe/
+COPY files/curl.sh /opt/monroe/
+COPY files/dig.sh /opt/monroe/
+COPY files/dnslib.py /opt/monroe/
+COPY files/netsniff.js /opt/monroe/
+COPY files/run.sh /opt/monroe/
+COPY files/run-without-headless-browser.sh /opt/monroe/
+
+RUN chmod +x /opt/monroe/run.sh
+RUN chmod +x /opt/monroe/run-without-headless-browser.sh
+RUN chmod +x /opt/monroe/dig.sh
+RUN chmod +x /opt/monroe/curl.sh
+
+COPY files/browsertime-master /opt/monroe/
+COPY files/run_experiment.py /opt/monroe/
+COPY files/seleniumRunner.js /opt/monroe/lib/core
+COPY files/browsertime.py /opt/monroe/
+
+CMD ["/opt/monroe/run.sh"]

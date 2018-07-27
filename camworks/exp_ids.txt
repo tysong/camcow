@@ -1,0 +1,96 @@
+Allocated task 34717.
+Allocated task 34725.
+Could not allocate. Only 1/3 nodes are available during interval 1 (2018-06-05T16:18:24 to 2018-06-05T16:51:44).
+Could not allocate. Only 1/3 nodes are available during interval 1 (2018-06-05T16:19:18 to 2018-06-05T16:52:38).
+Allocated task 34729.
+Allocated task 34731.
+Allocated task 34738.
+Allocated task 34739.
+Allocated task 34741.
+Could not allocate. Only 2/3 nodes are available during interval 1 (2018-06-05T19:05:08 to 2018-06-05T19:38:28).
+Could not allocate. Only 2/3 nodes are available during interval 1 (2018-06-05T19:07:38 to 2018-06-05T19:40:58).
+Could not allocate. Only 2/3 nodes are available during interval 1 (2018-06-05T19:07:55 to 2018-06-05T19:41:15).
+Could not allocate. Only 2/3 nodes are available during interval 1 (2018-06-05T19:17:49 to 2018-06-05T19:51:09).
+Could not allocate. Only 2/3 nodes are available during interval 1 (2018-06-05T19:18:47 to 2018-06-05T19:52:07).
+Could not allocate. Only 2/3 nodes are available during interval 1 (2018-06-05T19:19:59 to 2018-06-05T19:53:19).
+Could not allocate. Only 2/3 nodes are available during interval 1 (2018-06-05T19:21:16 to 2018-06-05T19:54:36).
+Allocated task 34747.
+Allocated task 34755.
+Allocated task 34820.
+Allocated task 34821.
+Allocated task 34825.
+Allocated task 34828.
+Allocated task 34829.
+Allocated task 34831.
+Allocated task 34834.
+Allocated task 35010.
+Allocated task 35233.
+Allocated task 35234.
+Allocated task 35237.
+Allocated task 35239.
+Allocated task 35239.
+Allocated task 35243.
+Allocated task 35289.
+Allocated task 35298.
+Allocated task 35302.
+Allocated task 35303.
+Allocated task 35304.
+Allocated task 35305.
+Allocated task 35309.
+Allocated task 35318.
+Could not allocate. Only 0/1 nodes are available during interval 1 (2018-06-11T21:42:33 to 2018-06-11T23:05:53).
+Allocated task 35350.
+Allocated task 35351.
+Allocated task 35353.
+Allocated task 35358.
+Allocated task 35390.
+Allocated task 35396.
+Allocated task 35397.
+Allocated task 35414.
+Allocated task 35417.
+Allocated task 35419.
+Allocated task 35424.
+Allocated task 35425.
+Could not allocate. Only 0/1 nodes are available during interval 1 (2018-06-12T14:20:14 to 2018-06-12T15:43:34).
+Allocated task 35426.
+Allocated task 35427.
+Allocated task 35466.
+Allocated task 35470.
+Could not allocate. Only 0/1 nodes are available during interval 1 (2018-06-12T21:54:34 to 2018-06-12T22:04:34).
+Could not allocate. Only 0/1 nodes are available during interval 1 (2018-06-12T21:57:09 to 2018-06-12T22:07:09).
+Could not allocate. Only 0/1 nodes are available during interval 1 (2018-06-12T21:57:23 to 2018-06-12T22:07:23).
+Allocated task 35481.
+Allocated task 35704.
+Allocated task 35710.
+Allocated task 35713.
+Allocated task 35722.
+Allocated task 35727.
+Allocated task 35732.
+Allocated task 35733.
+Allocated task 35738.
+Allocated task 35740.
+Allocated task 35790.
+Allocated task 35791.
+Allocated task 35793.
+Allocated task 35797.
+Allocated task 35800.
+Allocated task 35805.
+Allocated task 35807.
+Allocated task 35818.
+Allocated task 35820.
+Allocated task 35821.
+Allocated task 35825.
+Allocated task 35826.
+Allocated task 35827.
+Allocated task 35829.
+Allocated task 35831.
+Allocated task 35834.
+Allocated task 35837.
+Allocated task 35837.
+Allocated task 35839.
+Allocated task 35849.
+Allocated task 35851.
+Allocated task 35859.
+Allocated task 35869.
+Allocated task 36041.
+Allocated task 36042.
